@@ -152,8 +152,35 @@ a {
 .d_content .d_list .d_order-table ul li {
   font-size: 14px;
   float: left;
-  margin-right: 55px;
 }
+.d_content .d_list .d_order-table ul li:nth-of-type(2){
+	width: 400px;
+}
+.d_content .d_list .d_order-table ul li:nth-of-type(3){
+	width: 80px;
+	
+}
+.d_content .d_list .d_order-table ul li:nth-of-type(4){
+	margin-left: 10px;
+	width: 160px;
+}
+.d_content .d_list .d_order-table ul li:nth-of-type(5){
+	width: 60px;
+}
+.d_content .d_list .d_order-table ul li:nth-of-type(6){
+	margin-left: 60px;
+	width: 50px;
+}
+.d_content .d_list .d_order-table ul li:nth-of-type(7){
+	margin-left: 70px;
+	width: 70px;
+}
+.d_content .d_list .d_order-table ul li:nth-of-type(8){
+	margin-left: 90px;
+}
+.discount{color: red;}
+.d_content .d_list .d_order-table ul .d_num_box .add,.d_content .d_list .d_order-table ul .d_num_box .reduce{height: 20px;display: inline-block;line-height: 20px;text-align: center;vertical-align: top;}
+.d_content .d_list .d_order-table ul .d_num_box input{margin-top: 2px;}
 .d_content .d_list .d_order-table ul li:last-of-type{
 	margin-right: 0;
 }
@@ -168,11 +195,12 @@ a {
   position: relative;
   bottom: 50px;
   color: #333;
-  width: 230px;
+  width: 260px;
   display: inline-block;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  text-align: left;
 }
 .d_content .d_list .d_order-table ul li p {
   position: relative;

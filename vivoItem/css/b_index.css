@@ -13,6 +13,7 @@ html,body{width: 100%;}
 #b_column1 .b_left div{position: absolute;text-align: center;width: 100%;}
 #b_column1 .b_right div{position: absolute;text-align: center;width: 100%;}
 #b_column2,#b_column2 img{width: 100%;}
+#b_column3 img{width: 100%;}
 #b_column4{width: 100%;height: 575px;color: white;overflow: hidden;}
 #b_column4 .col4{width: 25%;float: left;text-align: center;height: 575px;overflow: hidden;cursor: pointer;}
 #b_column4 .col4 div{position: absolute;width: 25%;text-align: center;margin-top: 90px;line-height: 35px;}
