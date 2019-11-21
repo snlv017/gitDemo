@@ -1,0 +1,114 @@
+{
+  "id": "1405278",
+  "name": "淘宝头部",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "650564",
+      "name": "付款",
+      "font_class": "fukuan1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "705669",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "1975933",
+      "name": "服务",
+      "font_class": "fuwu1",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "2027329",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "2135022",
+      "name": "付款",
+      "font_class": "fukuan",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "2210060",
+      "name": "导航",
+      "font_class": "daohang",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "2912124",
+      "name": "正品",
+      "font_class": "zhengpin",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "4567424",
+      "name": "闪电发货",
+      "font_class": "shandianfahuo",
+      "unicode": "e906",
+      "unicode_decimal": 59654
+    },
+    {
+      "icon_id": "5969818",
+      "name": "快递",
+      "font_class": "kuaidi",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "6892669",
+      "name": "服务",
+      "font_class": "fuwu",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "7290573",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "7467952",
+      "name": "付款",
+      "font_class": "fukuan2",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "7549356",
+      "name": "下拉",
+      "font_class": "RectangleCopy",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "10270259",
+      "name": "线下",
+      "font_class": "xianxia",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11529752",
+      "name": "线下门店@3x",
+      "font_class": "xianxiamendianx",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}

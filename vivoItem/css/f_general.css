@@ -1,0 +1,8 @@
+body,html,div,head,img,p,i,li,ul,ol,dl,dt,dd,span,
+form,strong,h1,h2,h3,h4,h5,h6,video,source{margin:0;padding:0;}
+input,select,option,textarea{outline: none;}
+li{list-style: none;float: left;}
+a{text-decoration: none;color:#333;}
+b{font-weight: 500;}
+body{font-family:"微软雅黑";font-size: 12px;}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden; font-size:1px;} 

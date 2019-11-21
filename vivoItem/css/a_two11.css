@@ -1,0 +1,19 @@
+* { margin: 0; padding: 0; }
+
+.main { width: 16rem; margin: 0 auto; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+.a-box { background: #9d081c; margin-top: 32px;}
+.a-box img { width: 100%; }
+
+.a-two11 img { width: 100%; }
+.a-two11 img:nth-child(3), .a-two11 img:nth-child(5), .a-two11 img:nth-child(6), .a-two11 img:nth-child(7) { cursor: pointer; }
+
+.a-shouji ul { overflow: hidden; margin: .133333rem 0; }
+.a-shouji ul li { width: 5.226667rem; height: 6.933333rem; background: white; float: left; cursor: pointer; overflow: hidden; position: relative; }
+.a-shouji ul li:nth-child(2) { margin: 0 .16rem; }
+.a-shouji ul li img:nth-child(1) { position: absolute; }
+.a-shouji ul li img:nth-child(2) { position: absolute; bottom: 0; left: 0; }

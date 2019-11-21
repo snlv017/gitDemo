@@ -1,0 +1,36 @@
+html,body{width: 100%;}
+.b_main{width: 1180px;margin: 0 auto;}
+#b_header{width: 100%;background-color: #333333;height: 32px;}
+#b_header .b_p1{float: left;margin-left: 30px;}
+#b_header .b_p1 a{padding: 0 18px;}
+#b_header .b_p2{float: right;margin-right: 30px;}
+#b_login{border-right: 1px solid #cccccc;}
+#b_header .b_p2 a{padding: 0 24px;}
+#b_header a{color: #cccccc;font-size: 14px;line-height: 32px;}
+#b_nav{width: 100%;height: 68px;position: absolute;top: 32px;background-color: rgba(0,0,0,0.1);overflow: hidden;}
+#b_nav>.b_main a{color: white;float: left;}
+#b_index{font-size: 42px;font-weight: 600;}
+#b_nav .b_main #b_index:hover{color: #476fff;}
+#b_nav>.b_main>.b_p1{float: left;margin-left: 28px;}
+#b_nav>.b_main>.b_p1 a{padding: 0 23px;}
+#b_nav>.b_main>.b_p2 a{padding: 0 15px;}
+#signOut{width: 130px;height: 0px;position: absolute;right: 0px;top: 32px;background-color: white;z-index: 999;text-align: center;overflow: hidden;}
+#signOut a{font-size: 18px;line-height: 68px;border-bottom: 1px solid #eee;height: 60px;display: block;width: 100px;margin: 0 auto;}
+#b_nav>.b_main>.b_p2{float: left;margin-left: 15px;}
+#b_nav>.b_main{height: 68px;line-height: 68px;font-size: 18px;}
+#b_nav>.b_main>span{float: right;color: white;font-size: 18px;cursor: pointer;}
+#b_nav #b_navContent{height: 306px;width: 100%;overflow: hidden;}
+#b_nav #b_navContent>.b_main{height: 100%;}
+#b_nav #b_navContent>.b_main>.b_left{width: 940px;margin: 0;float: left;margin-top: 55px;}
+#b_nav #b_navContent>.b_main>.b_left dl{width: 150px;text-align: center;float: left;margin-left: 65px;height: 215px;cursor: pointer;}
+#b_nav #b_navContent>.b_main>.b_left dl dt{position: relative;height: 142px;}
+#b_nav #b_navContent>.b_main>.b_left a{color: #000;}
+#b_nav #b_navContent>.b_main>.b_left dl dt img{width: 65px;height: 142px;position: absolute;left: 30px;}
+#b_nav #b_navContent>.b_main>.b_left dl dt img:last-of-type{left: 55px;}
+#b_nav #b_navContent>.b_main>.b_right{width: 200px;padding-right: 35px;float: left;}
+#b_nav #b_navContent>.b_main>.b_left dl dd{height: 73px;overflow: hidden;}
+#b_nav #b_navContent>.b_main>.b_left dl dd .b_p1{margin: 25px 0 5px 0;}
+#b_nav #b_navContent>.b_main>.b_left dl dd .b_p2{color: #445fff;font-size: 14px;}
+#b_nav #b_navContent>.b_main>.b_right{margin-top: 55px;}
+#b_nav #b_navContent>.b_main>.b_right p{width: 200px;height: 60px;border-radius: 30px;background-color: #f1f1f1;text-align: center;line-height: 60px;margin-top: 10px;position: relative;font-size: 14px;cursor: pointer;}
+#b_nav #b_navContent>.b_main>.b_right p span{font-size: 20px;position: absolute;left: 20px;}

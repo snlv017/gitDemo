@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/b_header.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font/iconfont.css"/>
+	</head>
+	<body>
+		<div id="b_header">
+			<p class="b_p1">
+				<a href="#">品牌</a>
+				<a href="../lib/a_vivo9-1.html" target="_parent">Funtouch OS</a>
+				<a href="#">体验店</a>
+				<a href="#">政企业务</a>
+				<a href="#">社区</a>
+			</p>
+			<p class="b_p2">
+				<!--<a href="#">购物车</a>
+				<a href="../lib/b_login.html" target="_parent" id="b_login">登录</a>
+				<a href="../lib/b_regist.html" target="_parent" id="b_regit">注册</a>-->
+				<div id="signOut">
+					<a href="#">退出</a>
+				</div>
+			</p>
+		</div>
+		<div id="b_nav">
+			<div class="b_main clearfix">
+				<a href="../index.html" target="_parent" id="b_index">vivo</a>
+				<p class="b_p1">
+					<a index=0 href="#">iQOO专区</a>
+					<a index=1 href="#">NEX系列</a>
+					<a index=2 href="#">X系列</a>
+					<a index=3 href="#">S系列</a>
+					<a index=4 href="#">Z系列</a>
+					<a index=5 href="#">Y系列</a>
+					<a index=6 href="#">U系列</a>
+					<a index=7 href="#">真无线耳机</a>
+				</p>
+				<p class="b_p2">
+					<a href="#">商城</a>
+					<a href="#">服务</a>
+				</p>
+				<span href="#" class="iconfont icon-sousuo"></span>
+			</div>
+			<div id="b_navContent">
+				<div class="b_main">
+					<div class="b_left clearfix">
+						<!--<dl>
+							<dt>
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (54).png" />
+								<img src="../img/b_header/index (40).png" />
+							</dt>
+							<dd>
+								<p class="b_p1">iQOO Pro</p>
+								<p class="b_p2">新款</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (54).png" />
+								<img src="../img/b_header/index (40).png" />
+							</dt>
+							<dd>
+								<p class="b_p1">iQOO Pro</p>
+								<p class="b_p2">新款</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (54).png" />
+								<img src="../img/b_header/index (40).png" />
+							</dt>
+							<dd>
+								<p class="b_p1">iQOO Pro</p>
+								<p class="b_p2">新款</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (20).png" />
+								<img src="../img/b_header/index (54).png" />
+								<img src="../img/b_header/index (40).png" />
+							</dt>
+							<dd>
+								<p class="b_p1">iQOO Pro</p>
+								<p class="b_p2">新款</p>
+							</dd>
+						</dl>-->
+						
+					</div>
+					<div class="b_right">
+						<p class="b_p1"><span class="iconfont icon-caidan1"></span>全部机型</p>
+						<p class="b_p2"><span class="iconfont icon-shouji"></span>对比iQOO机型</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/jquery-1.8.3.min.js"></script>
+		<script src="../js/b_header.js"></script>
+		<script>
+			var token = getCookieByName("token");
+			var uname = getCookieByName("b_account");
+			if(!!token && !uname){//如果token信息存在 ，说明有上一次的登录记录，需要通过token来作登录操作
+				location.href = "../php/b_login.php";
+			}
+			var b_account=getCookieByName("b_account");
+			if(!b_account){
+				$("#b_header .b_p2").html("<a href='../lib/b_login.html' target='_parent' id='b_login'>登录</a><a href='../lib/b_regist.html' target='_parent' id='b_regit'>注册</a>");
+			}else{
+				$("#b_header .b_p2").html("<a href='../lib/d_chart.html' target='_parent' id='b_shopCart'>购物车</a><a href='#' target='_parent' id='b_regit' class='zh'>"+b_account+"</a>");
+			}
+			$(".zh").mouseover(function(){
+				$("#signOut").stop().animate({"height":68});
+			})
+			$(".zh").mouseout(function(){
+				$("#signOut").stop().animate({"height":0});
+			})
+			$("#signOut").mouseover(function(){
+				$("#signOut").stop().animate({"height":68});
+			})
+			$("#signOut").mouseout(function(){
+				$("#signOut").stop().animate({"height":0});
+			})
+			$("#signOut a").click(function(){
+				removeCookie("b_account","/");
+				removeCookie("token","/");
+				location.reload();
+			})
+		</script>
+	</body>
+</html>

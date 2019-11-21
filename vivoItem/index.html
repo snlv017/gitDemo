@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="css/b_index.css"/>
+	</head>
+	<body>
+		<iframe id="b_iframe" style="position: absolute;top: 0;z-index: 999;" src="lib/b_header.html" frameborder="0" width="100%" height="100px"></iframe>
+		
+			<div id="b_banner" prom="lib/a_two11.html">
+				<div class="b_main">
+					<h2>11.11决战日</h2>
+					<p>击穿底价，火爆开抢</p>
+				</div>
+			</div>
+		<div id="b_column1">
+			<div class="b_left b_col" prom="lib/c_ports.html">
+				<div>
+					<h2>vivo 真无线蓝牙耳机</h2>
+					<p>高清音质 语音声控</p>
+				</div>
+				<img src="img/b_index/index (21).png" />
+			</div>
+			<div class="b_right b_col" prom="lib/e_power.html">
+				<div>
+					<h2>vivo双向闪充移动电源</h2>
+					<p>10000mAh|22.5w闪充</p>
+				</div>
+				<img src="img/b_index/index (10).png" />
+			</div>
+		</div>
+		<a href="lib/d_iqooNeo.html">
+			<div id="b_column2">
+				<img src="img/b_index/index (01).png" />
+			</div>
+		</a>
+		<a href="lib/nex3.html">
+			<div id="b_column2">
+				<img src="img/b_index/index (26).jpg" />
+			</div>
+		</a>
+		<a href="lib/e_detail.html">
+			<div id="b_column3">
+				<img src="img/b_index/index (06).png" />
+			</div>
+		</a>
+		<div id="b_column4">
+			<div url="lib/a_x27.html" class="col4">
+				<div>
+					<h2>X27 印象夏日</h2>
+					<p>4800万广角夜景三摄</p>
+				</div>
+				<img src="img/b_index/index (22).jpg" />
+			</div>
+			<div url="lib/g_oldToNew.html" class="col4">
+				<div>
+					<h2>以旧换新</h2>
+					<p>专业评估 急速回收</p>
+				</div>
+				<img src="img/b_index/index (20).png" />
+			</div>
+			<div url="lib/c_leidiao.html" class="col4">
+				<div>
+					<h2>图文镭雕</h2>
+					<p>让你的手机与众不同</p>
+				</div>
+				<img src="img/b_index/index (22).jpg" />
+			</div>
+			<div url="lib/g_vivoZ5.html" class="col4">
+				<div>
+					<h2>Z5全面实力派</h2>
+					<p>4800万超广角三摄</p>
+				</div>
+				<img src="img/b_index/index (25).jpg" />
+			</div>
+		</div>
+		<iframe src="lib/b_footer.html" frameborder="0" width="100%" height="480px"></iframe>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			(function($){
+				$(window).resize(function(){
+					var x=($("#b_column1 img").width()-$("#b_column1 .b_left").width())/2;
+					$("#b_column1 img").css("left",-x);
+				});
+				$("#b_column1 .b_col").mouseover(function(){
+					
+					$(this).find("img").stop().animate({"height":"110%","left":"-33%"});
+				});
+				$("#b_column1 .b_col").mouseout(function(){
+					$(this).find("img").stop().animate({"height":"100%","left":"-25%"});
+				});
+				$("#b_column1 .b_col").click(function(){
+					location.href=$(this).attr("prom")
+				})
+				$("#b_banner").click(function(){
+					location.href=$(this).attr("prom");
+				})
+				$("#b_column4 .col4").mouseover(function(){
+					$(this).siblings().stop().animate({"width":"23%"});
+					$(this).stop().animate({"width":"30%"});
+					
+				})
+				$("#b_column4 .col4").mouseout(function(){
+					$("#b_column4 .col4").stop().animate({"width":"25%"});
+				})
+				$("#b_column4 .col4").click(function(){
+					location.href=$(this).attr("url");
+				})
+				
+				$("iframe:eq(0)").mouseover(function(){
+					$(this).height(406);
+				})
+				$("iframe:eq(0)").mouseout(function(){
+					var _this=this;
+					setTimeout(function(){
+						$(_this).animate({"height":100});
+					},500)
+				})
+			})(jQuery)
+		</script>
+	</body>
+</html>

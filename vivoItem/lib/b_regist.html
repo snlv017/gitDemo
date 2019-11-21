@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/b_regist.css"/>
+	</head>
+	<body>
+		<div id="b_main">
+			<h1>vivo</h1>
+			<h3>账号注册</h3>
+			<form id="form" action="../php/b_regist.php" method="post">
+				<input type="text" name="b_account" id="b_account" placeholder="请输入账号名" value="" /><br />
+				<p class="b_p1"></p>
+				<input type="password" name="b_pwd" id="b_pwd" placeholder="请输入密码" value="" /><br />
+				<p class="b_p2"></p>
+				<input type="text" name="b_phone" id="b_phone" placeholder="请输入手机号" value="" /><br />
+				<p class="b_p3"></p>
+				<input type="submit" name="b_sub" id="b_sub" value="立即注册" />
+			</form>
+		</div>
+		<div id="b_bottom">
+			<p class="b_p1"><a href="#"><span class="iconfont icon-huihua"></span>在线客服</a><span class="iconfont icon-dianhua"></span>400-678-9688(24小时全国服务热线)</p>
+			<p class="b_p2">COPYRIGHT &copy;2011-2019 广东步步高电子工业有限公司 版权所有 保留一切权利 | 隐私政策 | 法律声明 | 粤B2-20080267 | 粤ICP备05100288号</p>
+		</div>
+		<script src="../js/jquery-1.8.3.min.js"></script>
+		<script>
+			var p1="",aflag=false;
+			(function($){
+				
+				$("#b_account").blur(function(){
+					var aVal=$("#b_account").val();
+					var aReg=/^[a-zA-Z_]\w{3,11}$/;
+					if(aReg.test(aVal)){
+						$.ajax({
+							type:"post",
+							url:"../php/b_inspect.php",
+							data:{
+								b_account:aVal
+							},
+							success(res){
+								console.log(res);
+								if(res==0){
+									p1="该用户名已存在";
+									aflag=false;
+									$("#form .b_p1").css("color","red");
+								}else{
+									p1="ok";
+									aflag=true;
+									$("#form .b_p1").css("color","green");
+								}
+								$("#form .b_p1").html(p1);
+							}
+						});
+					}else{
+						p1='用户名必须为"a-z,A-Z,0-9,_"组成的4-12位,且不能以数字开头';
+						$("#form .b_p1").css("color","#bbb");
+					}
+					$("#form .b_p1").html(p1);
+				});
+				$("#b_sub").click(function(){
+					if(!aflag){
+						return false;
+					}
+					
+				});
+			})(jQuery)
+		</script>
+	</body>
+</html>
